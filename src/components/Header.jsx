@@ -32,18 +32,17 @@ function Header({
     <header className="header">
       <div className="logo">
         <svg viewBox="0 0 32 32" fill="none" width="32" height="32">
-          <circle cx="16" cy="16" r="10" fill="#E8A020"/>
-          <circle cx="16" cy="16" r="6" fill="#F5C84C"/>
-          <line x1="16" y1="2" x2="16" y2="6" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="16" y1="26" x2="16" y2="30" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="2" y1="16" x2="6" y2="16" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="26" y1="16" x2="30" y2="16" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="6.1" y1="6.1" x2="8.9" y2="8.9" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="23.1" y1="23.1" x2="25.9" y2="25.9" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="25.9" y1="6.1" x2="23.1" y2="8.9" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
-          <line x1="8.9" y1="23.1" x2="6.1" y2="25.9" stroke="#E8A020" strokeWidth="2" strokeLinecap="round"/>
+          {/* Martini glass */}
+          <polygon points="6,4 26,4 16,18" fill="#A8D8F0" stroke="#5BAED6" strokeWidth="1.2" strokeLinejoin="round"/>
+          <line x1="16" y1="18" x2="16" y2="27" stroke="#5BAED6" strokeWidth="1.8" strokeLinecap="round"/>
+          <line x1="11" y1="27" x2="21" y2="27" stroke="#5BAED6" strokeWidth="2" strokeLinecap="round"/>
+          {/* Olive */}
+          <circle cx="16" cy="10" r="2.2" fill="#7CB87A" stroke="#4A8A48" strokeWidth="0.8"/>
+          <circle cx="16" cy="10" r="0.8" fill="#D44"/>
+          {/* Cocktail stick */}
+          <line x1="10" y1="6" x2="22" y2="14" stroke="#C8A050" strokeWidth="1" strokeLinecap="round"/>
         </svg>
-        <h1>A beer by the sun</h1>
+        <h1>Un verre au soleil ?</h1>
       </div>
 
       <div className="search-wrap">
