@@ -22,7 +22,7 @@ function makeIcons(isNight, isBadWeather) {
   };
 }
 
-function Map({ terraces, onTerraceClick, selectedTerrace, onBoundsChange, isNight, isBadWeather }) {
+function Map({ terraces, onTerraceClick, selectedTerrace, onBoundsChange, isNight, isBadWeather, onMapClick }) {
   const mapRef = useRef(null);
   const mapInstanceRef = useRef(null);
   const markersRef = useRef([]);
@@ -126,6 +126,7 @@ function Map({ terraces, onTerraceClick, selectedTerrace, onBoundsChange, isNigh
     }).addTo(map);
 
     map.on('moveend zoomend', () => renderMarkersInView(true));
+    map.on('click', () => { if (onMapClick) onMapClick(); });
 
     mapInstanceRef.current = map;
 

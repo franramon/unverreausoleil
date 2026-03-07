@@ -287,6 +287,7 @@ function App() {
           onBoundsChange={handleBoundsChange}
           isNight={sunPosition.altitude <= 0}
           isBadWeather={weatherInfo ? !weatherInfo.sunny : false}
+          onMapClick={() => setListOpen(false)}
         />
 
         <TerraceList
